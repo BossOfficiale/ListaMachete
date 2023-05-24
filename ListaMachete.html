@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Copy Links Example</title>
+</head>
+<body>
+Ferrari Laferrari 2013
+    <button id="button1">Copy Link 1</button><br><br>
+Bugatti Chiron 2016
+    <button id="button2">Copy Link 2</button><br><br>
+Mercedes Benz AMG GT3 2018
+    <button id="button3">Copy Link 3</button><br><br>
+Porsche 911 GT3
+    <button id="button4">Copy Link 4</button><br><br>
+BMW M6 GT3 Schubert 2016
+    <button id="button5">Copy Link 5</button><br><br>
+Hamann Volcano 2011
+    <button id="button6">Copy Link 6</button><br><br>
+BMW 3-0 1976
+    <button id="button7">Copy Link 7</button><br><br>
+BMW M4 2018
+    <button id="button8">Copy Link 8</button><br><br>
+BMW 3-5 1976
+    <button id="button9">Copy Link 9</button><br><br>
+Ferrari F40
+    <button id="button10">Copy Link 10</button><br><br>
+Ferrari Testarossa
+    <button id="button11">Copy Link 11</button><br><br>
+Ferrari Enzo
+    <button id="button12">Copy Link 12</button><br><br>
+Ferrari 488 Pista 2018
+    <button id="button13">Copy Link 13</button><br><br>
+Ferrari Dino nr35
+    <button id="button14">Copy Link 14</button><br><br>
+Ferrari 512 BB 1981
+    <button id="button15">Copy Link 15</button><br><br>
+
+    <script>
+        // Function to copy the provided link to the clipboard
+        function copyToClipboard(link) {
+            var tempInput = document.createElement("input");
+            tempInput.value = link;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert("Copied the link to the clipboard: " + link);
+        }
+
+        // Get the buttons by their IDs
+        var button1 = document.getElementById("button1");
+        var button2 = document.getElementById("button2");
+        var button3 = document.getElementById("button3");
+        var button4 = document.getElementById("button4");
+        var button5 = document.getElementById("button5");
+        var button6 = document.getElementById("button6");
+        var button7 = document.getElementById("button7");
+        var button8 = document.getElementById("button8");
+        var button9 = document.getElementById("button9");
+        var button10 = document.getElementById("button10");
+        var button11 = document.getElementById("button11");
+        var button12 = document.getElementById("button12");
+        var button13 = document.getElementById("button13");
+        var button14 = document.getElementById("button14");
+        var button15 = document.getElementById("button15");
+
+        // Add event listeners to the buttons
+        button1.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/ferrari-laferrari-2013-macheta-auto-scara-1-43-rosu-magazine-models?queryID=fd30665e57e6e8fb5051a2a5a7d894f4&objectID=12205&indexName=magento2_default_products');
+        });
+
+        button2.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/bugatti-chiron-2016-macheta-auto-scara-1-43-albastru-atlas?queryID=fd30665e57e6e8fb5051a2a5a7d894f4&objectID=10695&indexName=magento2_default_products');
+        });
+
+        button3.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/mercedes-benz-amg-gt3-2018-47-pommer-gotz-adac-gt-masters-nurburgring-macheta-auto-scara-1-43-galben-cmr?queryID=3eb4f1f81596ac32b30cebcd9592e7bd&objectID=11003&indexName=magento2_default_products');
+        });
+
+        button4.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/porsche-911-991-gt3-r-69-iron-force-2018-gt-masters-nurburgring-macheta-auto-scara-1-43-alb-cmr');
+        });
+
+        button5.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/bmw-m6-gt3-20-schubert-2016-macheta-auto-scara-1-43-alb-cu-negru-rosu-si-albastru-minichamps?queryID=1de6caf95513f7eca5079b1831899c9e&objectID=11426&indexName=magento2_default_products');
+        });
+
+        button6.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/hamann-volcano-2011-macheta-auto-scara-1-43-alb-cu-negru-neo?queryID=2e9138e94db2c8c0590a755a05a7fee5&objectID=10291&indexName=magento2_default_products');
+        });
+
+        button7.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/bmw-3-0-csl-juma-tuning-4-1976-macheta-auto-scara-1-18-alb-cu-rosu-minichamps');
+        });
+
+        button8.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/bmw-m4-2018-bmw-team-rbm-bruno-spengler-macheta-auto-scara-1-18-negru-minichamps');
+        });
+
+        button9.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/bmw-3-5-csl-aspm-44-1976-1-18-minichamps');
+        });
+
+        button10.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/machete-auto-macheta-auto-ferrari-f40-scara-1-43-rosu-magazine-models12?queryID=98cbf933f042790729caead16af7b1f0&objectID=14484&indexName=magento2_default_products');
+        });
+
+        button11.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/macheta-auto-ferrari-testarossa-scara-1-43-rosu-magazine-models?queryID=98cbf933f042790729caead16af7b1f0&objectID=14474&indexName=magento2_default_products');
+        });
+
+        button12.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/macheta-auto-ferrari-enzo-scara-1-43-galben-magazine-models?queryID=98cbf933f042790729caead16af7b1f0&objectID=14478&indexName=magento2_default_products');
+        });
+
+        button13.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/macheta-auto-ferrari-488-pista-2018-scara-1-43-argintiu-bburago?queryID=98cbf933f042790729caead16af7b1f0&objectID=14116&indexName=magento2_default_products');
+        });
+
+        button14.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/ferrari-racing-collection-nr-35-dino-206-s-1966?queryID=98cbf933f042790729caead16af7b1f0&objectID=13612&indexName=magento2_default_products');
+        });
+
+        button15.addEventListener("click", function() {
+            copyToClipboard('https://magazinulcolectionarului.ro/ferrari-512-bb-1981-macheta-auto-1-43-rosu-bburago?queryID=98cbf933f042790729caead16af7b1f0&objectID=13373&indexName=magento2_default_products');
+        });
+    </script>
+</body>
+</html>
